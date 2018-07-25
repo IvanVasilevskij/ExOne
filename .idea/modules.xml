@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FileExplorerFx.iml" filepath="$PROJECT_DIR$/FileExplorerFx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExOne.iml" filepath="$PROJECT_DIR$/ExOne.iml" />
     </modules>
   </component>
 </project>
