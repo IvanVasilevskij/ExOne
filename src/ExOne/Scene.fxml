@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExOne.controller.Controller">
+   <children>
+      <TreeView fx:id="treeview" layoutX="15.0" layoutY="39.0" onMouseClicked="#handleMouseClicked" prefHeight="409.0" prefWidth="350.0" />
+      <Button fx:id="btn" layoutX="742.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#foundFilesWithExpression" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #762ada;" text="Find" textFill="WHITE" />
+      <TextArea fx:id="area" layoutX="374.0" layoutY="39.0" prefHeight="356.0" prefWidth="361.0" wrapText="true" />
+      <TextArea fx:id="areaForExpression" layoutX="742.0" layoutY="96.0" prefHeight="88.0" prefWidth="147.0" wrapText="true" />
+      <Label layoutX="742.0" layoutY="72.0" prefHeight="17.0" prefWidth="147.0" text="Expression for search" textFill="#762ada" />
+      <Label layoutX="742.0" layoutY="191.0" prefHeight="17.0" prefWidth="147.0" text="Type of searching file" textFill="#762ada" />
+      <TextField fx:id="fieldForType" layoutX="742.0" layoutY="216.0" prefHeight="25.0" prefWidth="147.0" promptText=".log" text=".log" />
+      <Label layoutX="743.0" layoutY="282.0" prefHeight="17.0" prefWidth="94.0" text="Files found:" textFill="#762ada" />
+      <Label fx:id="count" layoutX="842.0" layoutY="282.0" prefHeight="10.0" prefWidth="46.0" textFill="#762ada" />
+      <Label layoutX="742.0" layoutY="14.0" prefHeight="17.0" prefWidth="147.0" text="Enter path" textFill="#762ada" />
+      <TextField fx:id="path" layoutX="741.0" layoutY="39.0" promptText="path" />
+      <Label layoutX="743.0" layoutY="306.0" prefHeight="17.0" prefWidth="94.0" text="Current:" textFill="#762ada" />
+      <Label fx:id="currentCount" layoutX="842.0" layoutY="306.0" prefHeight="17.0" prefWidth="46.0" textFill="#762ada" />
+      <Button fx:id="next" layoutX="782.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#nextFileWithExpression" prefHeight="42.0" prefWidth="68.0" style="-fx-background-color: #762ada;" text="next file" textFill="WHITE" />
+      <Button fx:id="prevIndexOfExp" layoutX="374.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#setFocusOnPrevExpression" style="-fx-background-color: #762ada;" text="previous entrance of expression" textFill="WHITE" />
+      <Button fx:id="nextIndexOfExp" layoutX="574.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#setFocusOnNextExpression" style="-fx-background-color: #762ada;" text="next entrance of expression" textFill="WHITE" />
+      <Label layoutX="742.0" layoutY="402.0" prefHeight="17.0" prefWidth="94.0" text="count entrance:" textFill="#762ada" />
+      <Label layoutX="743.0" layoutY="427.0" prefHeight="17.0" prefWidth="94.0" text="current:" textFill="#762ada" />
+      <Label fx:id="countEntrance" layoutX="840.0" layoutY="402.0" prefHeight="17.0" prefWidth="46.0" />
+      <Label fx:id="currentEntrance" layoutX="840.0" layoutY="427.0" prefHeight="17.0" prefWidth="46.0" />
+      <Label layoutX="460.0" layoutY="14.0" prefHeight="17.0" prefWidth="59.0" text="FIle name" textFill="#762ada" />
+      <Label fx:id="nameFoundFile" layoutX="527.0" layoutY="14.0" prefHeight="17.0" prefWidth="206.0" textFill="#762ada" />
+   </children>
+</AnchorPane>
